@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+    --animate-fadein: fade 0.5s ease-in-out;
+    --animate-fadeout: fade 0.5s ease-in-out reverse;
+    --animate-scrollup: scroll 0.5s ease-in-out, fade 0.5s ease-in-out;
+
+    --font-sans: Outfit, sans-serif;
+
+    --background-image-striped: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 5px,
+        rgba(0, 0, 0, 0.1) 5px,
+        rgba(0, 0, 0, 0.1) 10px
+    );
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes scroll {
+        from {
+            transform: translateY(50px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+a {
+    color: var(--color-gray-950);
+}
