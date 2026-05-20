@@ -1,6 +1,7 @@
 <script>
     import SideBar from "$lib/sidebar.svelte"
     import Button from "$lib/button.svelte"
+    import Link from "$lib/link.svelte"
     
     let { children } = $props();
 
@@ -33,5 +34,5 @@
         </div>
     </div>
 
-    <div class="text-xs text-white opacity-75 p-3">This page was rendered with <a href="https://svelte.dev/">SvelteKit</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a> and a bit of magic. ✨</div>
+    <div class="text-xs text-white opacity-75 p-3">This page was rendered with <Link href="https://svelte.dev/">SvelteKit</Link>, <Link href="https://tailwindcss.com/">Tailwind CSS</Link> and a bit of magic. ✨</div>
 </div>
