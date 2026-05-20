@@ -8,6 +8,7 @@
 </script>
 
 <svelte:head>
+	<title>UselessGhost.me</title>
 </svelte:head>
 
 <Modal>
