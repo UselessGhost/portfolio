@@ -4,17 +4,6 @@
     import Link from "$lib/link.svelte"
     
     let { children } = $props();
-
-    // antispam 
-    function sendEmail() {
-        let email = "pbagnpg@hfryrfftubfg.zr";
-
-        email = s.replace( /[A-Z]/gi, c =>
-                "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"[
-                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".indexOf(c) ] );
-
-        window.location = "mailto:" + email
-    }
 </script>
 
 <div class="animate-fadein animate-scrollup md:h-screen flex flex-col items-center justify-center p-5">
@@ -24,7 +13,7 @@
                 <Button href="/">👤 About me</Button>
                 <Button href="/projects">🛠️ Projects</Button>
                 <div class="hidden md:block my-auto"></div>
-                <Button href="javascript:;" onClick={ sendEmail }>✉️ Contact</Button>
+                <Button href="https://github.com/UselessGhost">🐙 Github</Button>
             </SideBar>
 
             <div class="rounded col-span-3 md:col-span-2 p-5 md:h-full md:overflow-auto bg-gradient-to-b from-black/10 to-black/20 border border-black/10 shadow-inner flex">
